@@ -23,8 +23,8 @@ yarn dev
 
 - Registration of compliments
 
-   [ ] A user is not allowed to register a compliment for themselves
+   [x] A user is not allowed to register a compliment for themselves
 
-   [ ] It is not allowed to register praise for invalid user
+   [x] It is not allowed to register praise for invalid user
 
    [ ] User must be authenticated in the application

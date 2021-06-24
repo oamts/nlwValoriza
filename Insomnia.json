@@ -1,13 +1,87 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2021-06-23T00:35:40.788Z",
+  "__export_date": "2021-06-24T03:02:20.939Z",
   "__export_source": "insomnia.desktop.app:v2021.3.0",
   "resources": [
     {
+      "_id": "req_8207e90f4f864db09aaa285bbd275b5c",
+      "parentId": "wrk_4e7e3ebf114f429c8ac2e802df656476",
+      "modified": 1624496556916,
+      "created": 1624496522995,
+      "url": "{{ _.baseURL }}/login",
+      "name": "Authenticate User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"mateus@gmail.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a64e935c4a144f88bcb71275469bb69d"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624329342020,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_4e7e3ebf114f429c8ac2e802df656476",
+      "parentId": null,
+      "modified": 1624329327062,
+      "created": 1624329327062,
+      "name": "NLW6",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_469e7f7490624484a84c3e4cd987f35d",
+      "parentId": "wrk_4e7e3ebf114f429c8ac2e802df656476",
+      "modified": 1624503145700,
+      "created": 1624502878864,
+      "url": "{{ _.baseURL }}/compliments",
+      "name": "Create Compliment",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n\t\"tag_id\": \"3a97545c-e4b1-4333-817a-1c7043250f70\",\n\t\"user_sender\": \"57cb3315-b100-437b-884c-e87d86b418b5\",\n\t\"user_receiver\": \"57cb3315-b100-437b-884c-e87d86b418b1\",\n\t\"message\": \"obrigado, vai tomar no c*\" \n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a64e935c4a144f88bcb71275469bb69d"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624329341995,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_c77db8a91fcb42e1a0cdc900566b9fff",
       "parentId": "wrk_4e7e3ebf114f429c8ac2e802df656476",
-      "modified": 1624404545547,
+      "modified": 1624503690032,
       "created": 1624329341970,
       "url": "{{ _.baseURL }}/users",
       "name": "Create User",
@@ -15,7 +89,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"name\": \"mateus\",\n\t\"admin\": true\n}"
+        "text": "{\n\t\"name\": \"o2p\",\n\t\"email\": \"o2p@gmail.com\",\n\t\"password\": \"123456\"\n}"
       },
       "parameters": [],
       "headers": [
@@ -35,16 +109,6 @@
       "settingRebuildPath": true,
       "settingFollowRedirects": "global",
       "_type": "request"
-    },
-    {
-      "_id": "wrk_4e7e3ebf114f429c8ac2e802df656476",
-      "parentId": null,
-      "modified": 1624329327062,
-      "created": 1624329327062,
-      "name": "NLW6",
-      "description": "",
-      "scope": "collection",
-      "_type": "workspace"
     },
     {
       "_id": "req_c1b2cab6427647599012dc5b855262fd",
