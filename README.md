@@ -27,4 +27,4 @@ yarn dev
 
    [x] It is not allowed to register praise for invalid user
 
-   [ ] User must be authenticated in the application
+   [x] User must be authenticated in the application
